@@ -31,7 +31,7 @@ public class ProductsController {
 	public DataResult<List<Product>> getAll(){
 		return this.productService.getAll();
 	}
-	//Bir şey gönderileceği için
+	
 	@PostMapping("/add")
 	public Result add(@RequestBody Product product) {
 		return this.productService.add(product);
